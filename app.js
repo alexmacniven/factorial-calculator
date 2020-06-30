@@ -16,16 +16,16 @@ function resultBuilder(number, result) {
 }
 
 function calculate(event) {
-    let number = document.getElementById("number_input").value;
-    let display = document.getElementById("result_display");
-    console.log("number: " + number);
-    let result = factorialize(number);
-    console.log("result: " + result);
-    display.textContent = resultBuilder(number, result);
+    let number = document.getElementById("number_input").value
+    let display = document.getElementById("result_display")
+    console.log("number: " + number)
+    let result = factorialize(number)
+    console.log("result: " + result)
+    display.textContent = resultBuilder(number, result)
     event.preventDefault()
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("form");
-    form.addEventListener("submit", calculate);
+    const form = document.getElementById("form")
+    form.addEventListener("submit", calculate)
 })
